@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int op, des, fim;
+	float num1, num2;
+	cout <<"Bem vindo a calculadora!" << endl << "Se deseja usar a calculadora digite 1, se deseja sair digite 2." << endl;
+		cin >>des;
+    switch(des)
+	{
+	case 1:
+    cout <<"Ok, vamos la entao"<< endl <<"Digite o primeiro numero: " << endl;
+	   	cin >>num1;
+	cout <<"Digite o segundo numero: " << endl;
+	   	cin >>num2;
+	cout <<"Operacao: " << endl << "1- Soma" << endl << "2- Subtracao" << endl << "3- Divisao" << endl << "4- Multiplicacao" << endl;
+	   	cin >>op;
+	switch(op)
+	{
+	case 1:
+		cout <<"Seu resultado e: " <<num1 + num2<< endl;
+		break;
+	case 4:
+		cout <<"Seu resultado e: " <<num1 * num2<< endl;
+		break;
+	case 3:
+		cout <<"Seu resultado e: " <<num1 / num2<< endl;
+		break;
+	case 2:
+		cout <<"Seu resultado e: " <<num1 - num2 << endl;
+		break;
+	default:
+		cout <<"operação não foi possivel de ser executada";
+		break;
+	}
+		break;
+    case 2:
+    	cout <<"Ok, volte sempre!" << endl;
+    	return 0;
+	}
+	cout <<"Deseja calcular novamente? se sim digite 1, se nao digite 2." << endl;
+	cin >>fim;
+	switch(fim)
+	{
+	case 1:
+		return main ();
+		break;
+	case 2:
+		cout <<"Ok, volte sempre!" << endl;
+		return 0;
+		break;
+	}
+	
+
+	
+	return 0;
+}
